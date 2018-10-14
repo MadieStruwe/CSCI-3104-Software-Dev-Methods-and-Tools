@@ -1,0 +1,68 @@
+/*<!-- Madelaine Struwe -->*/
+
+#header
+{
+	font-family: arial;
+    text-align: center;
+}
+
+
+#one
+{
+	font-family: arial;
+	font-size: 15px;
+	background-color: #fd0200;	
+	color: #ffffff;
+	width: 10%;
+	padding: 5px;
+}
+
+#two
+{
+	font-family: arial;
+	font-size: 15px;
+	background-color: #ff9a00;
+	color: #ffffff;
+	width: 20%;
+	padding: 5px;
+}
+
+#three
+{
+	font-family: arial;
+	font-size: 15px;
+	background-color: #000202;
+	color: #ffffff;
+	width: 30%;
+	padding: 5px;
+}
+
+#four
+{
+	font-family: arial;
+	font-size: 15px;
+	background-color: #027400;
+	color: #ffffff;
+	width: 40%;
+	padding: 5px;
+}
+
+#five
+{
+	font-family: arial;
+	font-size: 15px;
+	background-color: #020aff;
+	color: #ffffff;
+	width: 50%;
+	padding: 5px;
+}
+
+#six
+{
+	font-family: arial;
+	font-size: 15px;
+	background-color: #730075;
+	color: #ffffff;
+	width: 60%;
+	padding: 5px;
+}

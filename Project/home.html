@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<!-- Bootstrap and CSS -->
+    	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    	<link rel="stylesheet" href="style_new.css">
+
+    	<title>Maintenance Requests</title>
+	</head>
+	
+	<body>
+		<!-- Navigation-->
+		<nav class="w3-bar w3-black">
+  			<a href="home.html" class="w3-button w3-bar-item">Home</a>
+  			<a href="about.html" class="w3-button w3-bar-item">About</a>
+  			<a href="account.html" class="w3-button w3-bar-item" style="align-self: right 100%;">Account</a>
+		</nav>
+		
+		<h1>Maintenance Requests</h1>
+
+		<br>
+		<!--Submit Form-->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<form>
+						<div id = "map" style="width:100%;height:400px;"></div>
+						<script>
+							function myMap() 
+							{
+								var mapCanvas = document.getElementById("map");
+								var mapOptions = 
+								{
+									center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+								};
+								var map = new google.maps.Map(mapCanvas, mapOptions);
+							}
+						</script>
+						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVOci6YpvS6Rt7qzkZOP7Yfy8182EAvmU&callback=myMap"></script>
+
+						<h4>Submit a Request</h4>
+						<div class="form-group">
+							<label for="location">Location<span style="color: red;">*</span></label>
+							<input type="text" class="form-control" id="location" placeholder="Address">
+						</div>
+						<div class="form-group">
+							<label for="room">Room Number</label>
+							<input type="text" class="form-control" id="room" placeholder="If In A Building">
+  						</div>
+  						<div class="form-group">
+    						<label for="shortdescrip">Request <span style="color:red;">*</span></label>
+    						<input type="text" class="form-control" id="shortdescrip" placeholder="Enter Request">
+  						</div>
+  						<div class="form-group">
+  							<label for="detaildescrip">Description</label>
+  							<textarea class="form-group" id="detaildescrip" rows="5" style="width: 100%; position: center;" placeholder="If needed, please provide a detailed description of your request"></textarea>
+  						</div>
+  						<div class="form-group">
+  							<span class="text-muted"><em><span style="color:red;">*</span> Indicates required field</em></span>
+  						</div>    
+  						<button type="reset" name = "reset" id="reset_button">
+  							Clear Form
+  						</button>
+  						<button type="submit" name = "submit" id="submit_button">
+  							Submit
+  						</button>
+  						<br>
+  					</form>
+  				</div>
+  			</div>
+  		</div>
+  		<br>
+      
+	     <!-- Footer -->
+	     <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+	     	<p class="w3-medium">
+	     		Powered by <a href="#" target="_blank">Input thing here?</a>
+	     	</p>
+		</footer> 
+	</body>
+</html>

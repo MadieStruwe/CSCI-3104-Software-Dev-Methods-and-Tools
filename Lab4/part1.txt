@@ -1,0 +1,54 @@
+Madelaine Struwe
+Sili Lai
+
+1. To change the background, I did the following:
+<style>
+    body 
+    {
+        background-color: blue
+    }
+</style>
+If I was to write it in a css file, it would be:
+
+2. Changing the margins moves where the boxes, and the numbers in them, are aligned to.
+<style>
+    div 
+    {
+        margin-left: 100px
+    }
+</style>
+Chaning the padding changes the size of the boxes. There is more space around the numbers that are in the boxes. 
+<style>
+    #div1 
+    {
+        padding: 150px
+    }
+</style>
+3. Here's the code:
+<style>
+    #div1 
+    {
+        background-color: yellow;
+        margin: 50px;
+        padding: 50px
+    }
+</style>
+If the margin is over 100px the webpage "grows" to accomidate the larger space.
+If the padding is over 100px nothing really changes
+4. 
+<style>
+    #div1 
+    {
+        background-color: yellow;
+        margin: 10px;
+        padding: 150px;
+        overflow: scroll;
+    }
+</style>
+Scroll shows a scroll bar on the box
+Hidden is the default look, without the scroll bar.
+5. The boxes alight from left to the right. They are in order, i.e. 1, 2, 3. If there is overflow, they start a new row, going from left to right. 
+If they have float right, they start from the right and go to the left. 
+6. The first box, moves to the left hand side of the screen, followed by box 2, moving flush against the first. Finally, the thrid follows suit. 
+7. They have the attributes border, height, and width.
+8. There is no margin, and goes flush against the window screen. The default margin value, is not 0.

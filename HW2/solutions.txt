@@ -1,0 +1,7 @@
+Madelaine Struwe
+
+Q: What are the things needed for Bootstrap to be loaded?
+A: Bootstrap needs the sylesheets to exist. The first link (stylesheet) goes to the bootstrap websight and acceess the sheet. The second link goes to our own webpage. 
+
+Q: How does Bootstrap’s Grid system work? (Please do not copy and paste the answer from the official website, you are required to explain it in your own words. Feel free to use analogies if it makes things easier!)
+A: It helps you create a containter and edit the contents within it. It would look like a piece of graph paper with a bunch of horizontal and vertial lines or columns. Where they interect, they create squares, that is where content such as changing its color can happen.

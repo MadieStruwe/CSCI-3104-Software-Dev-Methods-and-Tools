@@ -1,0 +1,46 @@
+Madelaine Struwe
+Joshua Nguyen
+1-22-18
+CSCI3308-102
+
+Part 4
+1. mkdir cs3308
+2. mkdir cs3308 CSCI3308
+3. there are hidden files. we used ls -a to show hidden files 
+4. ls -S lists file by size, one per line, largest on top. the volcano file was largest
+5.mkdir bigData
+cd pictures
+cp <volcano file> /home/user/CSCI3308/bigData
+cd ..
+cd texts
+ls -S
+cp dracula.txt /home/user/CSCI3308/bigData
+the folder is 8640 bytes, we found this out by useing du bigData
+6. zip bigData
+the folder is 26344 bytes
+7. tar -cvf bigData.tar /home/user/CSCI3308/bigData
+-cvf is used to create a .tar
+it is 8652 bytes
+8. rm -r bigData
+rm -r bigData.zip
+9. tar -xvf bigData.tar
+-xvf is used to extract a .tar
+10. little1.zip has a picture of a baby hippo and a text file. little2.zip has a folder called "little" that contains the same picture and text file
+11. find /home/user/CSCI3308 -name "target.txt"
+the path is "home/user/CSCI3308/Mystery/32/target.txt"
+12. cd texts
+(head -5 dracula.txt ; tail -5 dubliners.txt ; echo "=====") > Output.txt
+
+Part 5
+1. sort password_demo.txt
+2. sort -k 3n -t : password_demo.txt
+3. sort -k 4n -k 3n -t : password_demo.txt
+4. grep -w "daemon" password_demo.txt
+5. wc -l password_demo.txt
+6. sort -u -k 4n -t : password_demo.txt
+7. sort -u -k 4n -t : password_demo.txt > tmp
+8. wc -l tmp > getUniqueGID.sh
+./getUniqueGID.sh we did encounter the permission denied.
+chmod is used to change the file access permissions
+chmod +x /getUniqueGID.sh
+the script ran, but 35 is not a command

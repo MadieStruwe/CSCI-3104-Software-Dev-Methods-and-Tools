@@ -1,0 +1,139 @@
+/*
+color scheme, warm tones
+check the link for more schemes
+https://www.canva.com/learn/website-color-schemes/
+grain - #d7cec7
+blackboard - #565656
+oxblood - #76323f
+tan - #c09f80
+*/
+
+#header
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #dfcec7;
+	color: #000000;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 5px 10px #a49588;
+}
+
+#body
+{
+	background-color: #c09f80;
+	padding: 20px;
+}
+
+#feed
+{
+	width: 28%;
+	height: 85%;
+	background-color: #dfcec7;
+	position: absolute;
+	right: 15px;
+	font-family: Georgia, serif;
+	overflow-y: scroll;
+}
+
+#form
+{
+	width: 70%;
+	font-family: Georgia, serif;
+	padding: 10px;
+}
+
+#mapbackground
+{
+	background-color: #565656;
+	position: center;
+	width: 100%;
+	height: 400px;
+	padding: 2%;
+}
+
+#map
+{
+	width: 90%;
+	height: 100%;
+	background-color: #434343;
+}
+
+#room_location
+{
+	padding: 2%;
+}
+
+#maint_description
+{
+	padding: 2%;
+	width: 100%;
+	height: 30%;
+	box-sizing: border-box;
+}
+
+#description
+{
+	width: 90%;
+}
+
+button:hover
+{
+	opacity: 0.8;
+}
+
+#submit_button
+{
+	border-radius: 4px;
+	background-color: #2c7011;
+	color: white;
+	padding: 5px 5px;
+	position: absolute;
+	right: 30%;
+	cursor: pointer;
+	width: 10%;
+	align-self: right;
+}
+
+#cancelbtn
+{
+	border-radius: 4px;
+	background-color: #750a1e;
+	color: white;
+	padding: 5px 5px;
+	position: absolute;
+	left: 10%;
+	cursor: pointer;
+	width: 10%;
+	align-self: right;
+}
+
+#reset_button
+{
+	border-radius: 4px;
+	background-color: #749391;
+	color: white;
+	padding: 5px 5px;
+	position: absolute;
+	left: 10%;
+	cursor: pointer;
+	width: 10%;
+	align-self: right;
+}
+
+#emplogin
+{
+	border-radius: 4px;
+	background-color: #76323f;
+	color: white;
+	padding: 5px 5px;
+	position: absolute;
+	right: 10%;
+	cursor: pointer;
+	width: 10%;
+	align-self: right;
+}
+
+#chbox
+{
+
+}

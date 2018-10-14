@@ -1,0 +1,76 @@
+Joshua Nguyen
+Madelaine Struwe
+Step2:
+1)      Diff fruits_v1.txt fruits_v2.txt: Cranberry, Jackfruit, Nectarine
+2)      How to change the first line into the second line
+3)      Diff -c fruits_v1.txt fruits_v2.txt: -c option displays more information about filenames, last modification, and difference in the form of +, - or!.
+Step3:
+1)      Wc -l paasword_demo.txt: 15 passwords_demo.txt
+2)      Wc -m paasword_demo.txt: 692 passwords_demo.txt
+Step4:
+1)      cut -d ':' -f 1 password_demo.txt:
+root
+daemon
+sys
+games
+mail
+www-data
+backup
+nobody
+syslog
+whoopsie
+user
+sshd
+ntp
+mysql
+vboxadd
+ 
+2)    cut -d ' ' -f 2,4 grades.txt:
+LN HW1
+Slaven 1
+Eustathios 1
+Saša 0
+Gerard 1
+Babur 0
+Marin 0
+Marko 1
+ 
+Step5:
+1)	cut -d ':' -f 4 password_demo.txt | sort -k 1n -t : | uniq >> file.txt:
+0
+1
+2
+3
+5
+99
+999
+1000
+1337
+2)	egrep '^[mws]' password_demo.txt | cut -d ':' -f 1,6
+sys:/dev
+mail:/var/mail
+www-data:/var/www
+syslog:/home/syslog
+whoopsie:/nonexistent
+sshd:/var/run/sshd
+mysql:/nonexistent
+ 
+Step6:
+1)    sed 's/[a-z A-Z]//g' cryptic.txt
+2)      sed 's/[0-9]//g' cryptic.txt
+3)      sed 's/[0-9]/_/g' cryptic.txt
+4)    sed 's/[0]/o/g' cryptic.txt | sed 's/[1]/i/g' | sed 's/[3]/e/g' | sed 's/[4]/a/g' | sed 's/[5]/s/g'| sed 's/7/t/g'
+5)      use a shell script to run each command to change each individual integer into it respective character
+6)      write to a new file of your shell script for later usage
+ 
+Step7:
+ 
+1)    awk '{print $1, $2, (NR ? 100*gsub(1,1)/(NF-2) : "Avg")}' grades.txt
+2)       awk '{ sum += $3; n++ } END { if (n > 0) print sum / n; }' grades.txt
+0.625
+
+Step8:
+egrep '^[0-9][0-9][0-9]\-[0-9][0-9][0-9]\-[0-9][0-9][0-9][0-9]$' regex_practice_data.txt | wc -l : 767
+egrep '^303\-441\-[0-9][0-9][0-9][0-9]$' regex_practice_data.txt | wc -l : 51
+egrep '^.+\@[a-z A-Z]+\....$' regex_practice_data.txt | wc -l : 17705
+egrep '^.+\@[a-z A-Z]+\.gov$' regex_practice_data.txt | wc -l : 52
